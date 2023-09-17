@@ -18,9 +18,25 @@ ChatLoom is a specialized chatbot that leverages OpenAI's powerful language mode
    ```bash
    cd path_to_directory
    ```
+3. **Create a New Virtual Environment (Optional but Recommended)**:
+   - For virtualenv:
+     ```bash
+     virtualenv venv
+     source venv/bin/activate  # On Windows use: venv\Scripts\activate
+     ```
+   - For conda:
+     ```bash
+     conda create --name chatloom_env python=3.8
+     conda activate chatloom_env
+     ```
 
-3. **Setting up Environment Variables**:
-   - Rename the `.env_sample` file to `.env`:
+4. **Install Required Packages**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Setting up Environment Variables**:
+   - Rename the `.env_sample` file to `.env`.
    - Open the newly named `.env` file in any text editor of your choice.
    - Locate the placeholder for the OpenAI API key and replace it with your actual key.
 
